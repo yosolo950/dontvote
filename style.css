@@ -1,0 +1,116 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header styling */
+header {
+    background-color: #D71F27; /* Professional blue */
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+header h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.4em;
+}
+
+/* Main container */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Talking point sections */
+.talking-point {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin-bottom: 50px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.talking-point img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 8px;
+}
+
+.talking-point .content {
+    padding: 30px;
+    text-align: center;
+}
+
+.talking-point h2 {
+    font-size: 2em;
+    margin-bottom: 15px;
+    color: #D71F27;
+}
+
+.talking-point p {
+    font-size: 1.1em;
+}
+
+/* Responsive layout - switch to side-by-side on larger screens */
+@media (min-width: 768px) {
+    .talking-point {
+        flex-direction: row;
+        align-items: flex-start;
+        text-align: left;
+    }
+
+    .talking-point:nth-child(even) {
+        flex-direction: row-reverse;
+    }
+
+    .talking-point img {
+        margin: 20px;
+    }
+
+    .talking-point .content {
+        padding: 40px;
+        text-align: left;
+    }
+
+    .talking-point:nth-child(even) .content {
+        text-align: left;
+    }
+}
+
+/* Footer styling */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 30px;
+    margin-top: 50px;
+}
+
+footer a {
+    color: #007BFF;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
